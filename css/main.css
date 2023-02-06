@@ -1,1 +1,42 @@
-body{color: #036635; font-family: 'Nanum Gothic', sans-serif;}
+/* icons */
+.material-symbols-outlined {font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24}
+
+/* common */
+body{color: #333; font-size: 16px; font-weight: 400; line-height: 1.4; font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration: none;}
+.inner{position: relative; width: 1100px; height: 120px; margin: 0 auto;}
+img{display: block;}/*크기만큼 높이값 가져감*/
+
+/* header */
+header{position: fixed; width: 100%; top: 0; background-color: #f6f5ef; border-top: 2px solid black; border-bottom: 1px solid #eae7e2; z-index: 1;} 
+header .inner {}
+header .inner .logo{position: absolute; margin: auto; top: 0; bottom: 0; left: 0; height: 75px;}
+/* 수직 중앙정렬
+transform: translateY(-50%); display: block; position: absolute;  top: 50%; */
+
+/* sub menu */
+header .sub-menu {position: absolute; top: 6px; right: 50px; display: flex;}
+header .sub-menu .sub-menu__menu/*ul.menu*/ {text-align: center; display: flex;}
+header .sub-menu .sub-menu__menu>li:not(:first-child)::after{content: ""; position: absolute; top: 0; bottom: 0; margin: auto; display: block; width: 1px; height: 13px; background-color:#e5e5e5;} 
+header .sub-menu .sub-menu__menu>li{}
+header .sub-menu .sub-menu__menu>li>a{display: block; color: #656565; padding: 10px 15px; font-size: 13px;}
+header .sub-menu .sub-menu__menu>li>a:hover{text-decoration-line: underline;}
+
+/* search */
+header .sub-menu .search{position: relative; height: 34px; cursor: pointer;}
+header .sub-menu .search>input{width: 36px; height: 34px; padding: 4px 10px; border: 1px solid #ccc; box-sizing: border-box; border-radius: 5px; outline: none; transition: width 0.4s;}
+header .sub-menu .search>input:focus{width: 200px;}
+header .sub-menu .search>.material-symbols-outlined{position: absolute; margin: auto; right: 3px; top: 0; bottom: 0; height: 24px;}
+
+/* main menu */
+header .inner .main-menu{display: flex; position: absolute; bottom: 0; right: 0; cursor: pointer;}
+header .inner .main-menu .item{} 
+header .inner .main-menu .item .item__name{padding: 10px 22px 34px 22px; font-size: 13px;}
+header .inner .main-menu .item:hover .item__name{text-decoration-line: underline; background-color: #2c2a29; color: #690;}
+
+/* header .inner .main-menu .item{padding: 10px 20px 34px 20px; font-size: 13px;} 
+   header .inner .main-menu .item:hover{text-decoration-line: underline; background-color: #2c2a29; color: #690;} */
+
+/* main menu contents */
+header .inner .main-menu .item .item__contents{position: fixed; background-color: #2c2a29 ; color: white; width: 100%; height: 100px; left: 0; top: 120px; display: none;}
+header .inner .main-menu .item:hover .item__contents{display: block;}

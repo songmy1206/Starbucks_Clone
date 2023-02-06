@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
+  <!-- icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <!-- open graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="starbucks"/>
@@ -36,6 +39,73 @@
   <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
-  <h1>Hello, starbucks</h1>
+  <!-- header -->
+  <header>
+    <div class="inner">
+      <a href="#" class="logo">
+        <img src="./images/logo.png" alt="logo"/>
+      </a>
+
+      <!-- sub menu -->
+      <div class="sub-menu">
+        <ul class="sub-menu__menu">
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">My Starbucks</a></li>
+          <li><a href="#">Costomer Service & Ideas</a></li>
+          <li><a href="#">Find a Store</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="통합검색"/>
+          <span class="material-symbols-outlined">search</span>
+        </div>
+      </div>
+
+      <!-- main menu -->
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">COFFEE</div>
+          <div class="item__contents">COFFEE
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MENU</div>
+          <div class="item__contents">MENU
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">STORE</div>
+          <div class="item__contents">STORE
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">RESPONSIBILITY</div>
+          <div class="item__contents">RESPONSIBILITY
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">STARBUCKS REWARDS</div>
+          <div class="item__contents">STARBUCKS REWARDS
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">COPERATE SALES</div>
+          <div class="item__contents">COPERATE SALES
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">WHAT'S NEWS</div>
+          <div class="item__contents">WHAT'S NEWS
+            <div class="item__contents__menu"></div>
+          </div>
+        </li>
+      </ul>
+    </div><!--div : .inner enter-->
+  </header>
 </body>
 </html>
