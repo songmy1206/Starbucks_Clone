@@ -227,7 +227,8 @@ header .badges .badge img{cursor: pointer;}
 .find-store .inner .store_img4{opacity: 0; transition: 2s;}
 .find-store .inner .find-store__contents .store_text1{opacity: 0; transform: translateX(900px); transition: 2s .2s;}
 .find-store .inner .find-store__contents .store_text2{opacity: 0; transform: translateX(900px); transition: 2s .4s;}
-.find-store .inner .find-store__contents .btn--black{opacity: 0; transform: translateX(900px); transition: 2s .6s;}
+/* .find-store .inner .find-store__contents .btn--black{opacity: 0; transform: translateX(900px); transition: 2s .6s;} */
+.find-store .inner .find-store__contents .btn--black{transition: transform 2s, background-color .6s, color .6s, text-decoration .6s; opacity: 0; transform: translateX(900px);}
 .find-store:hover .inner .store_img1,
 .find-store:hover .inner .store_img2,
 .find-store:hover .inner .store_img3,
@@ -235,10 +236,10 @@ header .badges .badge img{cursor: pointer;}
 .find-store:hover .inner .find-store__contents .store_text1,
 .find-store:hover .inner .find-store__contents .store_text2,
 .find-store:hover .inner .find-store__contents .btn--black{transform: translateX(0px); opacity: 1;}
-/*버튼도 hover 시간이 바뀜 - 버튼에 transition: transform 3s, background-colo .6s, color .6s, text-decoration .6s; -> 각각 시간 부여*/
+/*버튼도 hover 시간이 바뀜 - 버튼에 transition: transform 2s, background-color .6s, color .6s, text-decoration .6s; -> 각각 시간 부여*/
 
 /* footer */
-footer{position: relative; background-color: black;}
+footer{position: relative; background-color: #2c2a29;}
 footer .inner{padding: 30px 0;}
 footer .inner .footer__menu{display: flex;}
 footer .inner .footer__menu .left{width: 90%;}
@@ -248,5 +249,23 @@ footer .inner .footer__menu .left .menu>li ul a{font-size: 14px; margin: 10px 0;
 footer .inner .footer__menu .left .menu>li>ul>li{font-size: 12px; padding: 5px 0; color: white;}
 footer .inner .footer__menu .left .menu>li ul a:hover,
 footer .inner .footer__menu .left .menu>li>ul>li:hover{text-decoration: underline; cursor: pointer;}
+footer .inner .footer__menu .right{width: 10%;}
+footer .inner .footer__menu .right img{float: right;}
 
-footer .inner .footer__menu .right{width: 10%; position: absolute; right: -70px;}
+/* footer sub menu */
+.footer__sub-menu{position: relative; background-color: #2c2a29;}
+.footer__sub-menu ul{display: flex; justify-content: center;}
+.footer__sub-menu ul>li{font-size: 12px; margin-right: 7px;}
+.footer__sub-menu ul>li>a{color: #ccc;}
+.footer__sub-menu ul>li>a:hover{text-decoration: underline;}
+.footer__sub-menu ul>li:first-child>a{color: #00b050;}
+.footer__sub-menu ul li.contour{color: #ccc;}
+/* .footer__sub-menu ul>li:not(:first-child)::after{content: ""; position: absolute; top: 0; bottom: 0; margin: auto; display: block; width: 1px; height: 12px; background-color:#ccc;}  */
+
+/* footer btn */
+.footer__btn{display: flex; justify-content: center;}/*inline 요소 -> text-align: center; 사용가능*/
+.footer__btn a{font-size: 12px; margin: 10px 0 0 5px;}
+
+/* footer copyright */
+.footer__copyright{font-size: 12px; text-align: center; color: #999999; padding: 20px; padding-bottom: 50px;}
+.footer__copyright p{}
