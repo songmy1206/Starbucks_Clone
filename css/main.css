@@ -39,8 +39,9 @@ header .sub-menu .sub-menu__menu>li>a:hover{text-decoration-line: underline;}
 /* search */
 header .sub-menu .search{position: relative; height: 34px; cursor: pointer;}
 header .sub-menu .search>input{width: 36px; height: 34px; padding: 4px 10px; border: 1px solid #ccc; box-sizing: border-box; border-radius: 5px; outline: none; transition: width 0.4s;}
-header .sub-menu .search>input:focus{width: 200px;}
+header .sub-menu .search>input.menu-toggle:focus{width: 200px;}
 header .sub-menu .search>.material-symbols-outlined{position: absolute; margin: auto; right: 3px; top: 0; bottom: 0; height: 24px;}
+
 
 /* main menu */
 header .inner .main-menu{display: flex; position: absolute; bottom: 0; right: 0; cursor: pointer;}
